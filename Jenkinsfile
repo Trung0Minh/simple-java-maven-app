@@ -1,9 +1,16 @@
+
 pipeline {
     agent any
+
+    tools {
+        jdk 'JDK_test'
+        maven 'Maven_Local'
+    }
+
     stages {
-        stage('Build') { 
+        stage('Build') {
             steps {
-                sh 'mvn -B -DskipTests clean package' 
+                sh 'mvn -B -DskipTests clean package'
             }
         }
     }
