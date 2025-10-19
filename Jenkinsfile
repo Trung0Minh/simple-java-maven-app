@@ -49,7 +49,7 @@ pipeline {
 
         stage('Build Confirmation') {
             steps {
-                echo "✅ Build completed and changes pushed successfully."
+                echo "Build completed and changes pushed successfully."
             }
         }
     }
